@@ -97,15 +97,8 @@ img {
 function isWeixin() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.match(/MicroMessenger/i) == "micromessenger") {
-		alert("微信");
         return true;
-    }
-	else if (ua.match(/QQ/i) == "qq") {
-		alert("QQ");
-		return true;
-	}
-	else {
-		alert("浏览器");
+    } else {
         return false;
     }
 }
